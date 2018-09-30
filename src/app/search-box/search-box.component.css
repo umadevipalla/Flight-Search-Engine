@@ -1,0 +1,54 @@
+div ul{
+    /* color:white; */
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+div ul li{
+padding:10px;
+}
+div.suggestion ul:after{
+    text-align: center;
+    width:200px;
+    position: absolute;
+    margin-left:0.3em;
+}
+li:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+
+div.tab{
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    /* transition: 0.3s; */
+}
+div.tab button:hover {
+    background-color: #ddd;
+}
+#refine{
+    margin:5px;
+}
+input{
+    display:block;
+    margin:5px;
+    width:75%;
+    text-transform: capitalize;
+}
+input[type='submit']{
+    width:40%;
+}
+
+div.tab button.active {
+    color:blueviolet;
+}

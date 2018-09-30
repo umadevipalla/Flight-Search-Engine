@@ -1,0 +1,150 @@
+{
+	"flights": [
+		{
+			"flightNo": "I5-1458",
+			"origin": "bangalore",
+			"destination": "vishakapatnam",
+			"time": {
+				"depart": "2018-09-29 18:55:00",
+				"arrive": "2018-09-29 20:30:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "2738.00"
+        },
+        {
+			"flightNo": "I5-1458",
+			"origin": "vishakapatnam",
+			"destination": "bangalore",
+			"time": {
+				"depart": "2018-09-29 07:45:00",
+				"arrive": "2018-09-29 09:25:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "2632.00"
+        },
+        {
+			"flightNo": "6E-611",
+			"origin": "hyderabad",
+			"destination": "vishakapatnam",
+			"time": {
+				"depart": "2018-09-29 16:50:00",
+				"arrive": "2018-09-29 18:00:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "3390.00"
+        },
+        {
+			"flightNo": "6E-608",
+			"origin": "vishakapatnam",
+			"destination": "hyderabad",
+			"time": {
+				"depart": "2018-09-29 08:05:00",
+				"arrive": "2018-09-29 09:15:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "2257.00"
+        },
+        {
+			"flightNo": "6E-882",
+			"origin": "chennai",
+			"destination": "vishakapatnam",
+			"time": {
+				"depart": "2018-09-29 18:00:00",
+				"arrive": "2018-09-29 19:20:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "2758.00"
+        },
+        {
+			"flightNo": "6E-742",
+			"origin": "vishakapatnam",
+			"destination": "chennai",
+			"time": {
+				"depart": "2018-09-29 22:05:00",
+				"arrive": "2018-09-29 06:10:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "3934.00"
+        },
+        {
+			"flightNo": "AI-563",
+			"origin": "chennai",
+			"destination": "bangalore",
+			"time": {
+				"depart": "2018-09-29 13:25:00",
+				"arrive": "2018-09-29 14:25:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "1360.00"
+        },
+        {
+			"flightNo": "6E-343",
+			"origin": "chennai",
+			"destination": "hyderbad",
+			"time": {
+				"depart": "2018-09-29 22:35:00",
+				"arrive": "2018-09-29 00:05:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "2073.00"
+        },
+        {
+			"flightNo": "6E-258",
+			"origin": "bangalore",
+			"destination": "chennai",
+			"time": {
+				"depart": "2018-09-29 13:40:00",
+				"arrive": "2018-09-29 15:05:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "1951.00"
+        },
+        {
+			"flightNo": "6E-497",
+			"origin": "bangalore",
+			"destination": "hyderabad",
+			"time": {
+				"depart": "2018-09-29 23:30:00",
+				"arrive": "2018-09-29 00:45:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "1622.00"
+        },
+        {
+			"flightNo": "6E-483",
+			"origin": "hyderabad",
+			"destination": "bangalore",
+			"time": {
+				"depart": "2018-09-29 23:20:00",
+				"arrive": "2018-09-29 00:35:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "1564.00"
+        },
+        {
+			"flightNo": "AI-546",
+			"origin": "hyderabad",
+			"destination": "chennai",
+			"time": {
+				"depart": "2018-09-29 21:15:00",
+				"arrive": "2018-09-29 22:35:00"
+			},
+			"date": "2018-09-27 23:16:00",
+			"amount": "2813.00"
+        },
+        {
+			"flightNo": "",
+			"origin": "",
+			"destination": "",
+			"time": {
+				"depart": "",
+				"arrive": ""
+			},
+			"date": "",
+			"amount": ""
+		}	
+		
+		
+	
+	]
+}

@@ -1,0 +1,55 @@
+
+<div class="tab">
+  <button id="oneway" [ngClass]="{'active':search.oneway}" (click)="updateBookingType(true)">One Way</button>
+  <button id="twoway" [ngClass]="{'active':!search.oneway}" (click)="updateBookingType(false)">Return</button>
+</div>
+
+<div class="userinputs">
+  <form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)" >
+
+    <input type="text" class="form-control" required name="origincity" placeholder="Enter origin city"
+    id="origincity" [(ngModel)]="search.originCity" autocomplete="off" (focus)="search.originCity=''" (input)="filterCity(search.originCity, true)" 
+    />
+    <!-- <div *ngIf="origincity.invalid && (origincity.dirty || origincity.touched)" class="alert alert-danger">
+        <sub style="color:#F74A4A">Please provide a valid input.</sub>
+      </div> -->
+    <div class="suggestion" *ngIf="filteredOriginCities.length>0">
+        <ul>
+          <li (click)="valueSelected(city, true)" *ngFor="let city of filteredOriginCities">{{city.charAt(0).toUpperCase() + city.slice(1).toLowerCase()}}</li>
+        </ul>
+      </div>
+    <!-- Destination Input -->
+    <input type="text" class="form-control" required name="destcity" placeholder="Enter Destination City"
+    id="destinationcity" [(ngModel)]="search.destinationCity" autocomplete="off" (focus)="search.destinationCity=''" (input)="filterCity(search.destinationCity, false)"
+    />
+    <div class="suggestion" *ngIf="filteredDestinationCities.length>0">
+        <ul>
+          <li (click)="valueSelected(city, false)" *ngFor="let city of filteredDestinationCities">{{city.charAt(0).toUpperCase() + city.slice(1).toLowerCase()}}</li>
+        </ul>
+      </div>
+    <!-- Departure Date -->
+    <input type="date" class="form-control" required  id="departdate" data-placeholder="Departure Date" [(ngModel)]="search.departureDate"
+    placeholder="YYYY-MM-DD" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"  name="depdate" min="2018-09-27" max="2020-09-27" required
+     />
+    <!-- Return Date -->
+    <div *ngIf="!search.oneway">
+    <input type="date" class="form-control" required id="returndate" [(ngModel)]="search.returnDate"
+    pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" name="retdate" min="2018-09-27" max="2020-09-27" 
+    />
+    </div>
+    <!-- Number of passengers -->
+    <input type="number" class="form-control" required #passengers="ngModel" min=1 placeholder="Passngers" name="passengers"
+    [(ngModel)]="search.passengers" />
+    <!--Submit-->
+    <input type="submit" id="search" name="searchbtn" (click)="clickSearchButton(search)"
+    />
+
+
+  </form>
+</div>
+
+<div id="refine">
+  <h4>Refine Flight Search</h4>
+  <p>Rs.{{search.refine}}</p>
+  <input type="range" [(ngModel)]="search.refine" id="refine" name="points" min="1000" max="10000" (change)="sliderChangeEvent($event)"/>
+</div>

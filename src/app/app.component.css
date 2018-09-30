@@ -1,0 +1,37 @@
+.header {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    min-height: 20px;
+    background: #1976d2;
+    color:white;
+    text-transform: uppercase;
+}
+.header h1{
+    display: inline;
+    font-size: 25px;
+}
+div.search-box{
+    float: left;
+    height: 100%
+}
+div.flight-card{
+    width:100%;
+    align-content: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.5s linear;
+    -webkit-transition: background-image 0.5s linear;
+    
+  }
+
+
+div.info-box{
+    /* margin:30px; */
+    width:100%;
+    align-content: center;
+  }
